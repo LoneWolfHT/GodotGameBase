@@ -13,13 +13,13 @@ func _ready():
 
 	if load_scene:
 		if (self.connect("button_up", self, "_on_loadscene_request", [ load_scene ]) != OK):
-			push_error("Failed to connect sceneload func to buttonpress signal")
+			push_error("[util->buttonpress] Failed to connect sceneload func to buttonpress signal")
 
 	print("[util->buttonpress]: Loaded")
 
-func _on_button_activate(button):
-	print("button default booped: ", button)
+# func _on_button_activate(button):
+# 	print("button default booped: ", button)
 
 func _on_loadscene_request(scenepath):
 	if (get_tree().change_scene(scenepath) != OK):
-		push_error("Failed to change scene on buttonpress")
+		push_error("[util->buttonpress] Failed to change scene on buttonpress")
