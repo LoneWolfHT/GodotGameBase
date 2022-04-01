@@ -4,7 +4,8 @@ export var setting = {
 	"audio_volume_shift": 0,
 	"window_maximized"  : true,
 	"window_dimensions" : OS.window_size,
-	"window_position"   : OS.window_position
+	"window_position"   : OS.window_position,
+	"keybinds"          : {}
 }
 
 const FILEPATH = "user://settings.json"
